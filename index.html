@@ -407,53 +407,53 @@
 
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <form class="">
-          <label>
-              <span class="modal-label-text">Ім'я</span>
-              <input  
-                type="text" 
-                class="modal-input" 
-                name="user-name" 
-                required
-                >
-          </label>
-                      
-            <!-- <label for="name" class="modal-label">Ім'я</label>
-            <svg class="modal-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-person-form"></use>
-            </svg> -->
-                        
+          <div class=" modal-field">            
+              <label for="user-name" class="modal-label">Ім'я</label>              
+                <div class="input-wrap">
+                  <input  
+                    type="text" 
+                    class="modal-input" 
+                    name="user-name" 
+                    required
+                    >
+                  <svg class="modal-input-icon" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-person-form"></use>
+                    </svg>
+                </div>
+          </div>
+         
+                                             
             <div class="modal-field">
               <label for="user-tel" class="modal-label">Телефон</label>
-                <input 
-                  type="tel" 
-                  class="modal-input" 
-                  name="user-tel"
-                  id="user-tel"
-                  required
-                  >
+                <div class="input-wrap">
+                  <input 
+                    type="tel" 
+                    class="modal-input" 
+                    name="user-tel"
+                    id="user-tel"
+                    required
+                    >
+                    <svg class="modal-input-icon" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+                    </svg>
+                </div>
             </div>
             
-                                   
-            <!-- <label for="tel" class="form-label">Телефон</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-phone-form"></use>
-            </svg> -->
-                 
-          
             <div class="modal-field">
               <label for="user-email" class="modal-label">Пошта</label>
-                <input 
-                  type="email" 
-                  class="modal-input" 
-                  name="user-email" 
-                  id="user-email"
-                  required>
+                <div class="input-wrap">
+                  <input 
+                    type="email" 
+                    class="modal-input" 
+                    name="user-email" 
+                    id="user-email"
+                    required>
+                    <svg class="modal-input-icon" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-email-form"></use>
+                    </svg>
+                </div>
             </div>
-          
-            <!-- <label for="mail" class="form-label">Пошта</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-email-form"></use>
-            </svg> -->
+                     
           <div class="modal-field">
             <label for="user-text" class="modal-label">Коментар</label>
             <textarea 
@@ -464,38 +464,26 @@
             ></textarea>
           </div>
            
-          
-        
-        
-          <!-- <div class="form-checkbox">
-            <label for="" class="checkbox-label">
-              <input type="text" class="checkbox-input" name="" value="Погоджуюся з розсилкою та приймаю Умови договору">
-              <svg class="checkbox-icon" width="16" height="15">
-                <use href=""></use>
+        <div class="modal-check-privacy">
+          <input 
+          type="checkbox" 
+          class="input-check visually-hidden"
+          name="privacy" 
+          id="privacy" 
+          value="true">
+          <label for="privacy" class="check-text">
+            <span>
+              <svg class="check-icon" width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a href="http://">Умови договору</a>
-            </label>
-          </div>
-         -->
-          
+            </span>
+            Погоджуюся з розсилкою та приймаю 
+            <a href="http://" style="color: #2196F3;">Умови договору</a>
+          </label>
+        </div>
 
-          <button type="submit" class="send-btn">Відправити</button>
-        <!-- <fieldset>
-            <legend>Pizza</legend>
-            <label for="big">Big</label>
-            <input type="radio" name="zize" id="big" value="big">
-            <label for="medium">Medium</label>
-            <input type="radio" name="zize" id="medium" value="medium">
-            <label for="small">Small</label>
-            <input type="radio" name="zize" id="small" value="small">
-          </fieldset>
-
-          <select name="city" class="modal-input">
-            <option value="vinnytsia">Vinnytsia</option>
-            <option value="pysarivra">Pysarivra</option>
-            <option value="kalynivka">Kalynivka</option>
-          </select> -->
+        <button type="submit" class="send-btn">Відправити</button>
+        
         </form>
         
     

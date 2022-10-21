@@ -539,6 +539,10 @@ img {
   background-color: #2f303a;
 }
 
+.input-subscribe:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .input-subscribe::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -569,13 +573,6 @@ img {
   text-align: center;
   gap: 10px;
 }
-
-.btn-subscribe:hover,
-.btn-subscribe:focus  {
-  color: var(--color-titles);
-  transition: color 250ms var(--timing-function);
-}
-
 
 /*-----------BACKDROP----------*/
 
@@ -642,6 +639,14 @@ img {
   margin-bottom: 12px;
 }
 
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
@@ -650,7 +655,24 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
-  margin-bottom: 10px;
+  padding-left: 42px;
+  outline: transparent;
+}
+
+.modal-input:focus,
+.modal-comment:focus {
+  border: 1px solid var(--color-accent);
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill: var(--color-accent);
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
 }
 
 .modal-label-text .modal-label {
@@ -671,7 +693,8 @@ img {
   padding: 12px 16px;
   resize: none;
   margin-top: 4px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  outline: transparent;
 }
 
 .modal-comment::placeholder {
@@ -680,6 +703,70 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-check-privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.check-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.check-text + a {
+  color: var(--color-accent);
+}
+
+.check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-titles);
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--color-accent);
+  border-color: transparent;
+  fill: #ffffff;
+}
+
+.input-check:focus + .check-text span {
+  border-color: var(--color-accent);
+}
+
+.send-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88x;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+  background: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /*-----------PORTFOLIO----------*/
