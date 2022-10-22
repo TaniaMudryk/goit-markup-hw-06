@@ -537,7 +537,9 @@ img {
   border-radius: 4px;
   padding: 15px 16px;
   background-color: #2f303a;
-}
+ 
+  }
+
 
 .input-subscribe:focus {
   color: rgba(255, 255, 255, 0.6);
@@ -619,7 +621,6 @@ img {
   height: 30px;
   right: 8px;
   top: 8px;
-
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -629,12 +630,16 @@ img {
   cursor: pointer;
 }
 
+.modal-btn:hover {
+  fill: var(--color-accent);
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;btn
   color: var(--color-titles);
   margin-bottom: 12px;
 }
@@ -657,6 +662,7 @@ img {
   margin-top: 4px;
   padding-left: 42px;
   outline: transparent;
+   
 }
 
 .modal-input:focus,
@@ -675,9 +681,9 @@ img {
   left: 15px;
 }
 
-.modal-label-text .modal-label {
+.modal-label-text,
+.modal-label {
   display: block;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -714,6 +720,7 @@ img {
 
 .check-text {
   display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
