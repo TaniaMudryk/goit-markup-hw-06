@@ -713,15 +713,12 @@ img {
 }
 
 .check-text {
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.check-text + a {
-  color: var(--color-accent);
 }
 
 .check-text span {
